@@ -23,17 +23,3 @@
 (g 4)
 (g 5)
 
-(define (pascal row column)
-  (cond ((or (= column row) (= column 0)) 1)
-        ((> column row) "Invalid Input")
-        (else (+ (pascal (- row 1) (- column 1))
-                 (pascal (- row 1) column)))))
-
-(pascal 5 0)
-(pascal 5 1)
-(pascal 5 2)
-(pascal 5 3)
-(pascal 5 4)
-(pascal 5 5)
-(pascal 5 6)
-
